@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.container {
+  display: block;
+  margin: auto;
+  width: 700px;
+  height: 700px;
+  border: 1px solid black;
+  border-radius: 3%;
+  background-color: white;
+  padding: 10px;
+}
+.cuadrado {
+  position: relative;
+  width: 680px;
+  height: 680px;
+  border: 3px solid black;
+}
+.pelota {
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 0 0,
+    hsl(60, 100%, 50%) 25%,
+    hsl(60, 100%, 30%) 70%,
+    hsl(60, 100%, 1%)
+  );
+  /*
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  background-image: url("tenis.png");
+  background-repeat: no-repeat;
+  background-size: contain;*/
+  -webkit-animation: moveX 3s linear 0s infinite alternate,
+    moveY 1s ease-in 0s infinite alternate,
+    deformacion 1s ease-in 0s infinite alternate;
+
+  -moz-animation: moveX 3s linear 0s infinite alternate,
+    moveY 1s ease-in 0s infinite alternate,
+    deformacion 1s ease-in 0s infinite alternate;
+  -o-animation: moveX 3s linear 0s infinite alternate,
+    moveY 1s ease-in 0s infinite alternate,
+    deformacion 1s ease-in 0s infinite alternate;
+  animation: moveX 3s linear 0s infinite alternate,
+    moveY 1s ease-in 0s infinite alternate,
+    deformacion 1s ease-in 0s infinite alternate;
+}
+
+@-webkit-keyframes moveX {
+  from {
+    left: 0;
+  }
+  to {
+    left: 546px;
+  }
+}
+@-moz-keyframes moveX {
+  from {
+    left: 0;
+  }
+  to {
+    left: 546px;
+  }
+}
+@-o-keyframes moveX {
+  from {
+    left: 0;
+  }
+  to {
+    left: 546px;
+  }
+}
+@keyframes moveX {
+  from {
+    left: 0;
+  }
+  to {
+    left: 546px;
+  }
+}
+@-webkit-keyframes moveY {
+  from {
+    top: 0;
+  }
+  to {
+    top: 546px;
+  }
+}
+@-moz-keyframes moveY {
+  from {
+    top: 0;
+  }
+  to {
+    top: 546px;
+  }
+}
+@-o-keyframes moveY {
+  from {
+    top: 0;
+  }
+  to {
+    top: 546px;
+  }
+}
+@keyframes moveY {
+  from {
+    top: 0;
+  }
+  to {
+    top: 546px;
+  }
+}
+
+@-webkit-keyframes deformacion {
+  95% {
+    height: 130px;
+  }
+  100% {
+    height: 110px;
+  }
+}
+@-moz-keyframes deformacion {
+  95% {
+    height: 130px;
+  }
+  100% {
+    height: 100px;
+  }
+}
+@-o-keyframes deformacion {
+  95% {
+    height: 130px;
+  }
+  100% {
+    height: 100px;
+  }
+}
+@keyframes deformacion {
+  95% {
+    height: 130px;
+  }
+  100% {
+    height: 100px;
+  }
+}
